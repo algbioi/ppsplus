@@ -17,6 +17,5 @@ Please consult the tutorial contained in the PPS+ distribution.
 
 
 DOCUMENTATION:
--Gregor et al. PhyloPythiaS+: A Self-Training Method for the Rapid Reconstruction of Low-Ranking Taxonomic Bins from Metagenomes. Plos Comput Biol. In Review.
--Gregor et al. (2014) PhyloPythiaS+: A self-training method for the rapid reconstruction of low-ranking taxonomic bins from metagenomes. Preprint. Available: arXiv:1406.7123v1.
+Gregor et al. (2014) PhyloPythiaS+: A self-training method for the rapid reconstruction of low-ranking taxonomic bins from metagenomes. Preprint. Available: arXiv:1406.7123v1.
 
