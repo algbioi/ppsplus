@@ -38,12 +38,12 @@ BLOCK_SIZE = 8192
 
 class Settings():
     def __init__(self):
-        self._url = "http://algbio.cs.uni-duesseldorf.de/software/ppsp"
+        self._url = "https://research.bifo.helmholtz-hzi.de/software/ppsp"
         self._customVal = ':'
         self._refVersion = None
         try:
             self._version = urllib2.urlopen(self._url + '/' + 'version.txt').read()
-        except urllib2.HTTPError:
+        except:
             self._version = "1_4"
             print("Can't get the current version from the server, version '%s' will be considered." % self._version)
 
@@ -325,10 +325,12 @@ def _main():
 def _test():
     pass
     # getChecksumForDir('/Volumes/VerbatimSSD/work/vm_rel_1_3/reference_NCBI20121122')
-    getChecksumForDir('/Volumes/VerbatimSSD/work/vm_1_4/tools')
+    # getChecksumForDir('/Volumes/VerbatimSSD/work/vm_1_4/tools')
     # getChecksumForDir('/Volumes/VerbatimSSD/work/vm_1_4/sys')
     # getChecksumForDir('/net/metagenomics/projects/PPSmg/release/1_4/nobackup/reference_NCBI20140513')
+    # getChecksumForDir('/media/igregor/verbatim/work/ppsp_vm/reference_NCBI201502')
+    # getChecksumForDir('/home/igregor/Documents/work/ippsp/tools')
 
 if __name__ == "__main__":
-    # _main()
-    _test()
+    _main()
+    # _test()
